@@ -13,7 +13,7 @@ jobs:
 
       - name: Install and Build 🔧
         env:
-          TEST_KEY: ${{ secrets.TestKey }}
+          TEST_KEY: ${{ secrets.TestKey }} # Название переменной: ${{ secrets.Название секрета }}
         run: |
           npm ci
           npm run build
